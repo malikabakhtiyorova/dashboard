@@ -86,7 +86,7 @@ body {
 .form_wrapper .textarea_field > span > i {
   padding-top: 10px;
 }
-.form_wrapper input[type=text], .form_wrapper input[type=email], .form_wrapper input[type=password] {
+.form_wrapper input[type=text],.form_wrapper input[type=file], .form_wrapper input[type=email], .form_wrapper input[type=password] {
   width: 100%;
   padding: 8px 10px 9px 35px;
   height: 35px;
