@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/categories.css">
+</head>
+<body>
+<section class="categories-section">
+      <div class="container categories-contaier">
+        <ul class="categories-list">
+          <li class="categories-item" id="first-category">
+            <button class="categories-link first-item" type="button">
+              <div>
+                <h3 class="categories-title">hello world</h3>
+                <span class="categories-count">78 vacancies</span>
+              </div>
+            </button>
+          </li>
+          <li class="categories-item">
+            <button class="categories-link" type="button">
+              <div>
+                <h3 class="categories-title">hello world</h3>
+                <span class="categories-count">78 vacancies</span>
+              </div>
+            </button>
+          </li>
+          <li class="categories-item">
+            <button class="categories-link" type="button">
+              <div>
+                <h3 class="categories-title">hello world</h3>
+                <span class="categories-count">78 vacancies</span>
+              </div>
+            </button>
+          </li>
+          <li class="categories-item">
+            <button class="categories-link" type="button">
+              <div>
+                <h3 class="categories-title">hello world</h3>
+                <span class="categories-count">78 vacancies</span>
+              </div>
+            </button>
+          </li>
+          <li class="categories-item">
+            <button class="categories-link" type="button">
+              <div>
+                <h3 class="categories-title">hello world</h3>
+                <span class="categories-count">78 vacancies</span>
+              </div>
+            </button>
+          </li>
+          <li class="categories-item">
+            <button class="categories-link" type="button">
+              <div>
+                <h3 class="categories-title">hello world</h3>
+                <span class="categories-count">78 vacancies</span>
+              </div>
+            </button>
+          </li>
+          <li class="categories-item">
+            <button class="categories-link" type="button">
+              <div>
+                <h3 class="categories-title">hello world</h3>
+                <span class="categories-count">78 vacancies</span>
+              </div>
+            </button>
+          </li>
+          <li class="categories-item">
+            <button class="categories-link" type="button">
+              <div>
+                <h3 class="categories-title">hello world</h3>
+                <span class="categories-count">78 vacancies</span>
+              </div>
+            </button>
+          </li>
+        </ul>
+
+        <ul class="subcategories" id="first-category-item"">
+          <li class="subcategories-item">
+            <a class="subcategories-link" href="#">
+              <div>
+                <h3 class="subcategories-title">G’isht quyish (mayda)</h3>
+                <span class="subcategories-count">12 vacancies</span>
+              </div>
+            </a>
+          </li>
+          <li class="subcategories-item">
+            <a class="subcategories-link" href="#">
+              <div>
+                <h3 class="subcategories-title">G’isht quyish (mayda)</h3>
+                <span class="subcategories-count">12 vacancies</span>
+              </div>
+            </a>
+          </li>
+          <li class="subcategories-item">
+            <a class="subcategories-link" href="#">
+              <div>
+                <h3 class="subcategories-title">G’isht quyish (mayda)</h3>
+                <span class="subcategories-count">12 vacancies</span>
+              </div>
+            </a>
+          </li>
+          <li class="subcategories-item">
+            <a class="subcategories-link" href="#">
+              <div>
+                <h3 class="subcategories-title">G’isht quyish (mayda)</h3>
+                <span class="subcategories-count">12 vacancies</span>
+              </div>
+            </a>
+          </li>
+          <li class="subcategories-item">
+            <a class="subcategories-link" href="#">
+              <div>
+                <h3 class="subcategories-title">G’isht quyish (mayda)</h3>
+                <span class="subcategories-count">12 vacancies</span>
+              </div>
+            </a>
+          </li>
+
+<li class="subcategories-item">
+            <a class="subcategories-link" href="#">
+              <div>
+                <h3 class="subcategories-title">G’isht quyish (mayda)</h3>
+                <span class="subcategories-count">12 vacancies</span>
+              </div>
+            </a>
+          </li>
+          <li class="subcategories-item">
+            <a class="subcategories-link" href="#">
+              <div>
+                <h3 class="subcategories-title">G’isht quyish (mayda)</h3>
+                <span class="subcategories-count">12 vacancies</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <script>
+        let categoryLi = document.querySelector('#first-category')
+        let subCategory = document.querySelector(`#${categoryLi.id}-item`)
+        
+        categoryLi.addEventListener("click", ()=> {
+            subCategory.classList.toggle("visible-sub");
+            console.log(subCategory)
+        })
+    </script>
+</body>
+</html>

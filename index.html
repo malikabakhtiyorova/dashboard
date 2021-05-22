@@ -5,8 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles1.css">
 </head>
 <body>
+    <form class="signup" action="#">
+        <h2>Sign up</h2>
+        <div class="names">
+            <input placeholder="Ismingiz" type="text" name="first-name">
+            <input placeholder="Familiyangiz" type="text" name="second-name">
+        </div>
+        <input placeholder="Telefon raqamingiz" type="text" class="phone" name="phone-number">
+        <div class="password">
+            <input placeholder="*******" type="password" id="myInput"><br><br>
+            <input type="checkbox" onclick="myFunction()">
+        </div>
+        
+        <input type="submit" value="Ro'yxatdan o'tish">
+    </form>
+    
+    <form class="order" action="#">
+        <h2>Ish o'rni yaratish</h2>
+        <input name="order-name" type="text" placeholder="Xizmatning qisqa nomi">
+        <textarea placeholder="Xizmatning haqida batafsilroq..." name="textarea" id="" cols="30" rows="5"></textarea>
+        <div class="selections-wrapper">
+            <div class="soha">
+                <label for="soha-select">Soha</label>
+                <select name="soha-select" id="soha-select">
+                    <option default value="Sohani tanlang">Sohani tanlang</option>
+                </select>
+            </div>
+
+             <div class="hudud">
+                <label for="hudud-select">Hudud</label>
+                <select name="hudud-select" id="hudud-select">
+                    <option default value="Qaysi hududdansiz">Qaysi hududdansiz</option>
+                </select>
+            </div>
+
+            <div class="narx">
+                <label for="narx-select">Narx</label>
+                <select name="narx-select" id="narx-select">
+                    <option default value="Masalan 12 000/kv">Masalan 12000/kv</option>
+                </select>
+            </div>
+        </div>
+
+        <input type="file" class="fa fa-images" placeholder="Rasm">
+
+        <input type="submit" value="Yakunlash">
+    </form>
+    
+    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
     
 </body>
 </html>
